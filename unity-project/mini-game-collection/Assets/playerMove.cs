@@ -7,8 +7,9 @@ using UnityEngine.Animations;
 
 public class playerMove : MonoBehaviour
 {
-    public Vector2 playerloc;
-     Vector2 playerNewLoc;
+    private Vector3 beans = Vector3.zero;
+   
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -18,17 +19,15 @@ public class playerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ArcadeInput.Player1.Up.Held)
+        float Yaxe = ArcadeInput.Player1.AxisY;
+        float Xaxe = ArcadeInput.Player1.AxisX;
+        beans = new Vector3(Yaxe, Xaxe, 0);
+        if (Xaxe >= 1 || Yaxe >= 1)
         {
-           playerNewLoc.x ++1;
+            beans.Normalize();
         }
+        transform.Translate(beans * Time.deltaTime);
     }
 
-    Vector2 aaaaaaaaa(Vector2 a,Vector2 b)
-    { 
-        
-        a = b+(1,0)
-
-        return a;
-    }
+  
 }
