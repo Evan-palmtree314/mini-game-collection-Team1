@@ -18,12 +18,5 @@ public class shipGuns : MonoBehaviour
        
 }
 
-    void shootaGun()
-    {
-        Vector3 
-        if (ArcadeInput.Player1.Action1.Pressed)
-        {
-
-            GameObject prefab = Instantiate(BulletPrefab, position, transform.rotation);
-        }
+  //
     }
