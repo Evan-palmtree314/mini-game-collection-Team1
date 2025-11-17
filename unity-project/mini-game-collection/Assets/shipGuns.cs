@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 
 public class shipGuns : MonoBehaviour
 {
-    private Bullet player1Bullet; 
+    public GameObject Bullet; 
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class shipGuns : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(player1Bullet, new Vector3(3, 3, 0), new Quaternion(0,0,0,0));
+            Instantiate(Bullet, transform.position, Quaternion.identity);
         }
         
     }
