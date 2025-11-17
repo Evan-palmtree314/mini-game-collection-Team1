@@ -1,6 +1,20 @@
 ## Game Mechanic:
 Our game is an asymmetric bullet hell game. Where one player controls a small space ship and the other player controls a big space ship acting as the boss. The game controls similarly to other top down space ship games like space invaders.
 
+## Game Elements
+Player 1:
+	Movement in any direction
+	Ability to slow down movement
+	Shoot bullets
+
+Player 2 (Boss):
+	Movement left and right
+	Shoot bullets and laser
+
+## Technical Specs
+Our game uses 2D graphics (provided in the project). Is top down and has asymmetric controls.
+
+
 ## Objective Statement
 Is it satisfying to dodge the incoming bullets and to take down the boss ship?
 
