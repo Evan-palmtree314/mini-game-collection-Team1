@@ -8,12 +8,12 @@ using UnityEngine.UIElements;
 
 public class shipGuns : MonoBehaviour
 {
-    public GameObject Bullet; 
-
+    public GameObject Bullet;
+    
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame

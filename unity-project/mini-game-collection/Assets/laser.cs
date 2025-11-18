@@ -1,17 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class BulletScript : MonoBehaviour
+public class laser : MonoBehaviour
 {
-    Rigidbody2D rb2d;
-
     // Start is called before the first frame update
+    private Rigidbody2D rb2d;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        rb2d.velocity = new Vector3(10, 0, 0);
+        transform.Rotate(0, 0, 90);
+        rb2d.velocity = new Vector3(-10, 0, 0);
     }
 
     // Update is called once per frame
@@ -22,11 +21,10 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Boss")
+        if (collision.gameObject.tag == "Player")
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
     }
-
 }
