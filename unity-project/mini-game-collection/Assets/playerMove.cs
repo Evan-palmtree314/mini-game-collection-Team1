@@ -37,8 +37,8 @@ public class playerMove : MonoBehaviour
 
         if (!slowState)
         {
-            Yaxe = ArcadeInput.Player1.AxisY * 2;
-            Xaxe = ArcadeInput.Player1.AxisX * 2;
+            Yaxe = ArcadeInput.Player1.AxisY * 3;
+            Xaxe = ArcadeInput.Player1.AxisX * 3;
         }
         else
         {

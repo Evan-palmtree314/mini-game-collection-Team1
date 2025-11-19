@@ -11,6 +11,7 @@ public class laser : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         transform.Rotate(0, 0, 90);
         rb2d.velocity = new Vector3(-10, 0, 0);
+        Destroy(gameObject, 5f);
     }
 
     // Update is called once per frame
